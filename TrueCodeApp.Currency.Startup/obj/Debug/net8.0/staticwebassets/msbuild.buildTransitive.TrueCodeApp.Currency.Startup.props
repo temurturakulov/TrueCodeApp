@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TrueCodeApp.Currency.Startup.props" />
-</Project>

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\TrueCodeApp.Currency.Startup.props" />
-</Project>
