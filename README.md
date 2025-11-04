@@ -5,7 +5,7 @@
 - `TrueCodeApp.Currency` — сервис валют (курс, избранные валюты)
 - `TrueCodeApp.JobManager` — фоновый сервис обновления курсов
 - `TrueCodeApp.Migrator` — миграции БД (FluentMigrator + EF)
-- `TrueCodeApp.Tests` — unit-тесты для User и Currency
+- `TrueCodeApp.Tests` — unit-тесты для User и Currency (NUnit + Moq)
 
 ## Как запустить
 1. Установить PostgreSQL и указать строку подключения в `appsettings.json` каждого микросервиса
