@@ -1,0 +1,12 @@
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\bin\Debug\net8.0\TrueCodeApp.Core.Domain.deps.json
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\bin\Debug\net8.0\TrueCodeApp.Core.Domain.dll
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\bin\Debug\net8.0\TrueCodeApp.Core.Domain.pdb
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.AssemblyInfo.cs
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.dll
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\refint\TrueCodeApp.Core.Domain.dll
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\TrueCodeApp.Core.Domain.pdb
+C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Domain\obj\Debug\net8.0\ref\TrueCodeApp.Core.Domain.dll

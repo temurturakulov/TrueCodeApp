@@ -1,0 +1,1234 @@
+2025-11-04 00:27:14 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 00:27:14 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-04 00:27:14 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 00:27:14 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 00:27:14 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-04 00:27:14 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 00:27:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 162.5728 ms
+2025-11-04 00:27:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 7.9848 ms
+2025-11-04 00:27:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 123.0119 ms
+2025-11-04 00:27:37 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)"'
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<UserCurrency>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-04 00:28:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:28:06 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (8ms).
+2025-11-04 00:28:06 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (10ms).
+2025-11-04 00:28:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 30976.3259 ms
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:28:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (6ms).
+2025-11-04 00:29:41 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:29:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:29:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 00:29:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:29:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:29:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:29:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:29:42 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 90140.8419 ms
+2025-11-04 00:29:42 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:29:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:29:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 00:30:00 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:30:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:30:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 00:30:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:01 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 16203.8982 ms
+2025-11-04 00:30:01 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:30:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] 1 entities were added and 0 entities were removed from navigation '"User"."UserCurrencies"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."Currency"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"UserCurrency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 00:30:21 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites/1" responded 200 in 9368.4446 ms
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 00:30:36 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 500 in 7411.9312 ms
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.UserId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-04 00:30:36 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.UserId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:30:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:31:20 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:31:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:31:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 00:31:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:31:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:31:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:31:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 00:31:21 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 500 in 11181.2664 ms
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.UserId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-04 00:31:21 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.Currency.UserCurrencies.UserId.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-04 00:31:21 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:31:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:31:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 00:33:40 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 00:33:40 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-04 00:33:40 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 00:33:40 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 00:33:40 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-04 00:33:40 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 00:33:40 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 230.6945 ms
+2025-11-04 00:33:40 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.6499 ms
+2025-11-04 00:33:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 116.8672 ms
+2025-11-04 00:33:56 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 00:33:57 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 00:33:57 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:33:57 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)
+    .Select(x => CurrencyDto.MapFromUserCurrency(x))"'
+2025-11-04 00:33:57 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (8ms).
+2025-11-04 00:33:58 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 2036.5539 ms
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:33:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 00:34:03 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-04 00:34:03 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-04 00:34:03 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-04 13:55:50 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 13:55:51 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-04 13:55:51 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 13:55:51 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 13:55:51 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-04 13:55:51 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 13:55:52 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 161.3221 ms
+2025-11-04 13:55:52 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.2338 ms
+2025-11-04 13:55:52 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 116.1600 ms
+2025-11-04 13:55:55 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 401 in 51.1106 ms
+2025-11-04 13:56:49 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 13:56:52 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)
+    .Select(x => CurrencyDto.MapFromUserCurrency(x))"'
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-04 13:56:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-04 13:56:58 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 10052.4857 ms
+2025-11-04 13:56:58 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:56:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .AsNoTracking()
+    .Select(x => CurrencyDto.MapFromCurrency(x))"'
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+        SELECT c.Id, c.Name, c.Rate
+        FROM public.currencies AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:11 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:57:13 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 3911.0711 ms
+2025-11-04 13:57:13 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:57:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (3ms).
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] 1 entities were added and 0 entities were removed from navigation '"User"."UserCurrencies"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."Currency"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"UserCurrency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 13:57:36 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites/19" responded 200 in 6693.0213 ms
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 13:57:42 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:57:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:57:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:57:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:42 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:57:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 2690.1430 ms
+2025-11-04 13:57:43 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:57:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:57:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:58:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:58:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:58:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:05 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:09 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"UserCurrency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] 0 entities were added and 1 entities were removed from navigation '"User"."UserCurrencies"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:20 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:58:20 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 13:58:21 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "DELETE" "/api/Currency/favorites/1" responded 200 in 26650.0934 ms
+2025-11-04 13:58:21 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:58:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:28 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 226.9121 ms
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 13:58:34 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:58:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:58:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:58:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:58:35 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 1348.4363 ms
+2025-11-04 13:58:35 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:58:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:58:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:21:21 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 15:21:21 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-04 15:21:21 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 15:21:21 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 15:21:21 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-04 15:21:21 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 15:21:21 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 148.4253 ms
+2025-11-04 15:21:21 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 5.7627 ms
+2025-11-04 15:21:22 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 121.3993 ms
+2025-11-04 15:21:37 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 15:21:39 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-04 15:21:40 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:21:47 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:21:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:21:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (11ms).
+2025-11-04 15:22:07 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)
+    .Select(x => CurrencyDto.MapFromUserCurrency(x))"'
+2025-11-04 15:22:08 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-04 15:22:08 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-04 15:22:08 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:22:08 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:22:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:22:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:22:10 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 36382.8476 ms
+2025-11-04 15:22:10 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:22:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:22:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 15:22:24 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites/5" responded 405 in 0.9706 ms
+2025-11-04 15:22:44 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 0.3637 ms
+2025-11-04 15:22:44 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 0.3810 ms
+2025-11-04 15:22:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 2.9541 ms
+2025-11-04 15:22:49 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites?currencyId=5" responded 401 in 12.1364 ms
+2025-11-04 15:23:10 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:23:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:23:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (4ms).
+2025-11-04 15:23:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:10 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:23:29 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-04 15:23:29 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:23:29 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:29 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (3ms).
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] 1 entities were added and 0 entities were removed from navigation '"User"."UserCurrencies"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."Currency"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"UserCurrency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 15:23:33 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites?currencyId=5" responded 200 in 28602.5034 ms
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:23:38 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:23:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:23:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:23:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:40 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:23:40 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:24:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:24:35 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 57605.5008 ms
+2025-11-04 15:24:35 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:26:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:26:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:26:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:26:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:26:09 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 401 in 5146.6082 ms
+2025-11-04 15:26:09 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:26:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:26:20 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:26:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:26:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:26:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:26:22 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 401 in 2282.1823 ms
+2025-11-04 15:26:22 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:26:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:27:02 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:02 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:27:04 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 4380.7020 ms
+2025-11-04 15:27:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:27:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:27:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:54:24 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 15:54:24 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-04 15:54:24 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 15:54:24 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 15:54:24 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-04 15:54:24 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 15:54:25 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 136.8395 ms
+2025-11-04 15:54:25 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 7.4807 ms
+2025-11-04 15:54:25 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 153.8429 ms
+2025-11-04 15:54:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 15:54:33 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 15:54:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:54:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 15:54:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:54:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:54:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-04 15:54:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:54:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:54:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:54:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (7ms).
+2025-11-04 15:54:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 401 in 12378.5452 ms
+2025-11-04 15:54:45 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:54:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:54:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 15:54:51 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-04 15:54:51 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-04 15:54:51 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped

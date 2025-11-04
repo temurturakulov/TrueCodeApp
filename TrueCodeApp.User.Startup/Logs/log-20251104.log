@@ -1,0 +1,951 @@
+2025-11-04 00:22:41 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 00:22:41 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5180"
+2025-11-04 00:22:41 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 00:22:41 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 00:22:41 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Startup"
+2025-11-04 00:22:41 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 00:22:42 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 134.9935 ms
+2025-11-04 00:22:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 60.6193 ms
+2025-11-04 00:22:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 17.6537 ms
+2025-11-04 00:22:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 172.8315 ms
+2025-11-04 00:25:44 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 00:25:53 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 00:25:53 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 00:25:54 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(x => x.Login == __login_0)"'
+2025-11-04 00:25:54 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Login == @__login_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 00:25:54 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 00:25:54 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-04 00:25:54 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:25:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:25:56 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 00:25:56 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:25:57 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-04 00:26:17 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/login" responded 200 in 32569.7001 ms
+2025-11-04 00:26:17 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 00:26:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 00:26:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 13:56:14 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 13:56:14 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5180"
+2025-11-04 13:56:14 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 13:56:14 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 13:56:14 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Startup"
+2025-11-04 13:56:14 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 13:56:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 104.3215 ms
+2025-11-04 13:56:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 3.5644 ms
+2025-11-04 13:56:15 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 113.4868 ms
+2025-11-04 13:56:29 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(x => x.Login == __login_0)"'
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Login == @__login_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-04 13:56:30 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (7ms).
+2025-11-04 13:56:36 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/login" responded 200 in 7520.9543 ms
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:56:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-04 13:59:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 400 in 10.0942 ms
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] '"ApplicationDbContext"' generated a temporary value for the property '"Token"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 13:59:35 [ERR] [Microsoft.EntityFrameworkCore.Update] An exception occurred in the database while saving changes for context type '"TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-04 13:59:35 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 500 in 3478.0071 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-04 13:59:35 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 13:59:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 14:02:01 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-04 14:02:01 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-04 14:02:01 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-04 14:02:08 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 14:02:08 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5180"
+2025-11-04 14:02:08 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 14:02:08 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 14:02:08 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Startup"
+2025-11-04 14:02:08 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 14:02:09 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 122.8547 ms
+2025-11-04 14:02:09 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.6147 ms
+2025-11-04 14:02:09 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 121.7707 ms
+2025-11-04 14:02:12 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 14:02:12 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 14:02:12 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 14:02:13 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 14:02:13 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 14:02:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 14:02:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-04 14:02:13 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (8ms).
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] '"ApplicationDbContext"' generated a temporary value for the property '"Token"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 14:02:20 [ERR] [Microsoft.EntityFrameworkCore.Update] An exception occurred in the database while saving changes for context type '"TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-04 14:02:20 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 500 in 8227.9639 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-04 14:02:20 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-04 14:02:20 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 14:02:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:02:20 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (3ms).
+2025-11-04 14:03:03 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 14:03:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 14:03:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 14:03:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] '"ApplicationDbContext"' generated a temporary value for the property '"Token"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 14:03:04 [ERR] [Microsoft.EntityFrameworkCore.Update] An exception occurred in the database while saving changes for context type '"TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table \"tokens\" violates foreign key constraint \"FK_tokens_users_UserId\"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-04 14:03:04 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 500 in 1425.0755 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-04 14:03:04 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "tokens" violates foreign key constraint "FK_tokens_users_UserId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: tokens
+    ConstraintName: FK_tokens_users_UserId
+    File: ri_triggers.c
+    Line: 2608
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TrueCodeApp.Core.Infrastructure.Services.TokenRevocationService.RevokeAsync(String token, DateTime expiresAt, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Core.Infrastructure\Services\TokenRevocationService.cs:line 21
+   at TrueCodeApp.User.Web.Controllers.UserController.Logout(CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Web\Controllers\UserController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 14:03:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 14:08:49 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-04 14:08:49 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-04 14:08:49 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-04 15:20:10 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 15:20:10 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5180"
+2025-11-04 15:20:10 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 15:20:10 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 15:20:10 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Startup"
+2025-11-04 15:20:10 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 15:20:11 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 242.6226 ms
+2025-11-04 15:20:11 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 7.1966 ms
+2025-11-04 15:20:11 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 234.4123 ms
+2025-11-04 15:20:28 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 15:20:35 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(x => x.Login == __login_0)"'
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Login == @__login_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (7ms).
+2025-11-04 15:20:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:20:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:20:37 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:20:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:20:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (10ms).
+2025-11-04 15:20:56 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/login" responded 200 in 27909.8883 ms
+2025-11-04 15:20:56 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:20:56 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:20:56 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:24:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] '"ApplicationDbContext"' generated a temporary value for the property '"Token"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The foreign key property '"Token"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Token"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:25:34 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 15:25:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 200 in 50727.8170 ms
+2025-11-04 15:25:43 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:25:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:25:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:26:32 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:26:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:26:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:26:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:33 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:26:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:26:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/login" responded 200 in 10716.7283 ms
+2025-11-04 15:26:41 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:26:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:26:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:28:01 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:28:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:28:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:28:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:28:01 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:28:03 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:28:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:28:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:28:05 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/register" responded 200 in 7710.9866 ms
+2025-11-04 15:28:05 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:28:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:28:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:52:16 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-04 15:52:17 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5180"
+2025-11-04 15:52:17 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-04 15:52:17 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-04 15:52:17 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.User.Startup"
+2025-11-04 15:52:17 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-04 15:52:17 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 179.7819 ms
+2025-11-04 15:52:17 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 6.4312 ms
+2025-11-04 15:52:17 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 137.2906 ms
+2025-11-04 15:52:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-04 15:52:34 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-04 15:52:34 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:52:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-04 15:52:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:52:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:52:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-04 15:52:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:52:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:52:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:52:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-04 15:52:52 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 401 in 19343.2498 ms
+2025-11-04 15:52:52 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:52:52 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:52:52 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(x => x.Login == __login_0)"'
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Login == @__login_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:05 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:53:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:53:06 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/login" responded 200 in 2824.6301 ms
+2025-11-04 15:53:06 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:53:06 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:06 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:53:19 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-04 15:53:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-04 15:53:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-04 15:53:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:19 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:21 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-04 15:53:52 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:52 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] '"ApplicationDbContext"' generated a temporary value for the property '"Token"."Id"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:53 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The foreign key property '"Token"."Id"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"Token"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-04 15:53:57 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/User/logout" responded 200 in 38008.7012 ms
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-04 15:53:57 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).

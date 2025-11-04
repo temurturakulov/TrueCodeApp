@@ -1,0 +1,566 @@
+2025-11-05 00:23:30 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-05 00:23:30 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-05 00:23:30 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-05 00:23:30 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-05 00:23:30 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-05 00:23:30 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-05 00:23:30 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 105.1165 ms
+2025-11-05 00:23:30 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.7947 ms
+2025-11-05 00:23:30 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 101.6308 ms
+2025-11-05 00:24:34 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-05 00:24:34 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-05 00:24:35 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:43 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (6ms).
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .AsNoTracking()
+    .Select(x => CurrencyDto.MapFromCurrency(x))"'
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+        SELECT c.Id, c.Name, c.Rate
+        FROM public.currencies AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:24:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 11844.0422 ms
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:24:45 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-05 00:25:00 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:25:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:25:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (2ms).
+2025-11-05 00:25:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:00 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:03 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)
+    .Select(x => CurrencyDto.MapFromUserCurrency(x))"'
+2025-11-05 00:25:03 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-05 00:25:04 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-05 00:25:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:05 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 5087.2570 ms
+2025-11-05 00:25:05 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:25:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:05 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:15 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:25:15 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:25:15 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2025-11-05 00:25:15 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:15 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for '"ApplicationDbContext"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for '"ApplicationDbContext"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] 1 entities were added and 0 entities were removed from navigation '"User"."UserCurrencies"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."Currency"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] The navigation '"UserCurrency"."User"' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"UserCurrency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for '"ApplicationDbContext"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type '"UserCurrency"' tracked by '"ApplicationDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for '"ApplicationDbContext"' with 1 entities written to the database.
+2025-11-05 00:25:16 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites?currencyId=43" responded 200 in 1326.3857 ms
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:16 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:22 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:25:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:25:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-05 00:25:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:22 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:24 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-favorites" responded 200 in 1434.4111 ms
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:24 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2025-11-05 00:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:36 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:36 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:25:39 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "DELETE" "/api/Currency/favorites/2" responded 500 in 6051.6850 ms
+System.ApplicationException: User currency not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.DeleteCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 69
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.DeleteFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-05 00:25:39 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.ApplicationException: User currency not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.DeleteCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 69
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.DeleteFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:25:39 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:26:35 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-05 00:26:35 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-05 00:26:35 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-05 00:30:53 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-05 00:30:53 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-05 00:30:53 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-05 00:30:53 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-05 00:30:53 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-05 00:30:53 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-05 00:30:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 105.1015 ms
+2025-11-05 00:30:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 5.0649 ms
+2025-11-05 00:30:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 99.2524 ms
+2025-11-05 00:30:58 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-05 00:30:58 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-05 00:30:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:04 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:31:09 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "DELETE" "/api/Currency/favorites/2" responded 200 in 11033.9837 ms
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:31:09 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-05 00:31:12 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-05 00:31:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-05 00:31:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-05 00:36:25 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-05 00:36:25 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-05 00:36:25 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-05 00:36:25 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-05 00:36:25 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-05 00:36:25 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-05 00:36:25 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 125.9486 ms
+2025-11-05 00:36:25 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 7.5342 ms
+2025-11-05 00:36:26 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 102.0402 ms
+2025-11-05 00:36:30 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-05 00:36:30 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-05 00:36:30 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:36:31 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Token>()
+    .Any(x => x.Value == __token_0)"'
+2025-11-05 00:36:31 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM public.tokens AS t
+                WHERE t.Value == @__token_0)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:36:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:36:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (4ms).
+2025-11-05 00:36:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (7ms).
+2025-11-05 00:36:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "DELETE" "/api/Currency/favorites/2" responded 401 in 11551.6208 ms
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:36:41 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (3ms).
+2025-11-05 00:37:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:37:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:37:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-05 00:37:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .FirstOrDefault(u => u.Id == __currencyId_0)"'
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Currency>(
+    asyncEnumerable: new SingleQueryingEnumerable<Currency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+            SELECT TOP(1) c.Id, c.Name, c.Rate
+            FROM public.currencies AS c
+            WHERE c.Id == @__currencyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"Currency"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .FirstOrDefault(u => u.UserId == __userId_0 && u.CurrencyId == __currencyId_1)"'
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserCurrency>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserCurrency>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) u.UserId, u.CurrencyId
+            FROM public.user_currencies AS u
+            WHERE (u.UserId == @__userId_0) && (u.CurrencyId == @__currencyId_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:37 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:37:38 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "DELETE" "/api/Currency/favorites/2" responded 404 in 4695.4424 ms
+2025-11-05 00:37:38 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:37:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:38 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.ChangeTracking] Context '"ApplicationDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:37:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:38:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:38:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-05 00:38:03 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites?currencyId=555" responded 404 in 3975.8079 ms
+2025-11-05 00:38:03 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-05 00:38:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-05 00:38:03 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-05 00:38:10 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-05 00:38:10 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-05 00:38:10 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped

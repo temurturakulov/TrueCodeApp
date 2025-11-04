@@ -1,0 +1,912 @@
+2025-11-03 11:33:30 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 11:33:30 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 11:33:30 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 11:33:30 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 11:33:30 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 11:33:30 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger" responded 301 in 131.4898 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 66.3619 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 1.2792 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.css" responded 200 in 13.1462 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 36.1878 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 32.6679 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 40.7021 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.6726 ms
+2025-11-03 11:33:31 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 105.0790 ms
+2025-11-03 11:34:41 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-03 11:34:41 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-03 11:34:41 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-03 12:06:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:06:12 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:06:12 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:06:12 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:06:12 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:06:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:06:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 193.8726 ms
+2025-11-03 12:06:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 6.5203 ms
+2025-11-03 12:06:13 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 89.5293 ms
+2025-11-03 12:06:20 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-03 12:06:20 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-03 12:06:20 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-03 12:06:56 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:06:56 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:06:56 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:06:56 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:06:56 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:06:56 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:06:57 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 298.9647 ms
+2025-11-03 12:06:57 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 17.1497 ms
+2025-11-03 12:06:57 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 98.5870 ms
+2025-11-03 12:07:06 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 14.3160 ms
+2025-11-03 12:07:29 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 10.3063 ms
+2025-11-03 12:07:40 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 0.9698 ms
+2025-11-03 12:09:38 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 4.1528 ms
+2025-11-03 12:32:43 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 0.7644 ms
+2025-11-03 12:38:49 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:38:50 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:38:50 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:38:50 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:38:50 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:38:50 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:38:56 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 278.5566 ms
+2025-11-03 12:38:56 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 14.2783 ms
+2025-11-03 12:38:57 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 83.9332 ms
+2025-11-03 12:38:59 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 14.0064 ms
+2025-11-03 12:39:59 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:40:00 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:40:00 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:40:00 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:40:00 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:40:00 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:40:00 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 358.6703 ms
+2025-11-03 12:40:00 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 8.4243 ms
+2025-11-03 12:40:00 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 85.5168 ms
+2025-11-03 12:40:05 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 12.8449 ms
+2025-11-03 12:40:56 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 9.8248 ms
+2025-11-03 12:41:03 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 1.5257 ms
+2025-11-03 12:42:27 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:42:27 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:42:27 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:42:27 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:42:27 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:42:27 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:42:28 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 268.8822 ms
+2025-11-03 12:42:28 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 14.0595 ms
+2025-11-03 12:42:28 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 81.7585 ms
+2025-11-03 12:42:38 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 12.5269 ms
+2025-11-03 12:42:51 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 4.1396 ms
+2025-11-03 12:43:02 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 1.2194 ms
+2025-11-03 12:51:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 12:51:12 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 12:51:12 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 12:51:12 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 12:51:12 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 12:51:12 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 12:51:18 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 4035.0531 ms
+2025-11-03 12:51:19 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 16.9792 ms
+2025-11-03 12:51:19 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 69.3627 ms
+2025-11-03 12:51:23 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 12.2379 ms
+2025-11-03 13:05:35 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:05:35 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:05:35 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:05:35 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:05:35 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:05:35 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:05:36 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 142.8810 ms
+2025-11-03 13:05:36 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 13.8535 ms
+2025-11-03 13:05:36 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 91.9556 ms
+2025-11-03 13:07:27 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 12.8959 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 13:07:27 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 13:11:58 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:11:59 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:11:59 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:11:59 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:11:59 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:11:59 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:11:59 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 133.1311 ms
+2025-11-03 13:11:59 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 3.4198 ms
+2025-11-03 13:11:59 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 86.4355 ms
+2025-11-03 13:12:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 36461.9900 ms
+2025-11-03 13:14:31 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:14:31 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:14:31 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:14:31 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:14:31 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:14:31 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:14:32 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 138.1512 ms
+2025-11-03 13:14:32 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 5.3097 ms
+2025-11-03 13:14:32 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 86.0393 ms
+2025-11-03 13:15:13 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 401 in 24466.6597 ms
+2025-11-03 13:28:02 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:28:02 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:28:02 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:28:02 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:28:02 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:28:02 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:28:03 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 134.3112 ms
+2025-11-03 13:28:03 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 5.8861 ms
+2025-11-03 13:28:03 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 82.2927 ms
+2025-11-03 13:42:40 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:42:40 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:42:40 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:42:40 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:42:40 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:42:40 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:42:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 149.8730 ms
+2025-11-03 13:42:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 6.3332 ms
+2025-11-03 13:42:41 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 84.8402 ms
+2025-11-03 13:43:53 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 13:43:53 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 35194.5527 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 13:43:53 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 13:45:45 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:45:45 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:45:45 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:45:45 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:45:45 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:45:45 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:45:45 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-03 13:45:45 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-03 13:45:46 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-03 13:45:53 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:45:53 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:45:53 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:45:53 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:45:53 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:45:53 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:45:53 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 150.0764 ms
+2025-11-03 13:45:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 13.0397 ms
+2025-11-03 13:45:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 88.4868 ms
+2025-11-03 13:46:04 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 13:46:04 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 7190.4457 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 13:46:04 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 13:46:31 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 5068.0927 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 13:46:31 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 13:47:01 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 20354.3475 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 13:47:01 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 13:54:47 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 13:54:47 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 13:54:47 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 13:54:47 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 13:54:47 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 13:54:47 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 13:54:48 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 177.9905 ms
+2025-11-03 13:54:48 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 8.4390 ms
+2025-11-03 13:54:49 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 215.9043 ms
+2025-11-03 14:02:36 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 14:02:36 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 14:02:36 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 14:02:36 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 14:02:36 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 14:02:36 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 14:38:06 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 14:38:07 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 14:38:07 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 14:38:07 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 14:38:07 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 14:38:07 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 14:38:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 139.6493 ms
+2025-11-03 14:38:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.7989 ms
+2025-11-03 14:38:08 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 79.8091 ms
+2025-11-03 14:41:50 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 14:41:50 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 14:41:50 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 14:41:50 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 14:41:50 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 14:41:50 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 14:41:51 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 132.0846 ms
+2025-11-03 14:41:51 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 5.5148 ms
+2025-11-03 14:41:51 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 81.5116 ms
+2025-11-03 14:42:44 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 14:42:44 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 26216.5858 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 14:42:44 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 14:44:05 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 500 in 10948.6417 ms
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 14:44:05 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TrueCodeApp.Core.Web.Services.UserIdentityService' while attempting to activate 'TrueCodeApp.Currency.Web.Controllers.CurrencyController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean hasDefaultValue, Object key)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 15:46:43 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 15:46:44 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 15:46:44 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 15:46:44 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 15:46:44 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 15:46:44 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 15:46:44 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 153.9545 ms
+2025-11-03 15:46:44 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 15.6346 ms
+2025-11-03 15:46:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 92.5519 ms
+2025-11-03 15:47:12 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 15:47:33 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 15:47:33 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 15:47:33 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)"'
+2025-11-03 15:47:33 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<UserCurrency>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (6ms).
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 15:47:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-03 15:47:34 [ERR] [Microsoft.EntityFrameworkCore.Query] An exception occurred while iterating over the results of a query for context type '"TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext"'."
+""Npgsql.PostgresException (0x80004005): 42P01: relation \"public.user_currencies\" does not exist
+
+POSITION: 69
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation \"public.user_currencies\" does not exist
+    Position: 69
+    File: parse_relation.c
+    Line: 1428
+    Routine: parserOpenTable"
+Npgsql.PostgresException (0x80004005): 42P01: relation "public.user_currencies" does not exist
+
+POSITION: 69
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "public.user_currencies" does not exist
+    Position: 69
+    File: parse_relation.c
+    Line: 1428
+    Routine: parserOpenTable
+2025-11-03 16:03:26 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 16:03:27 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 16:03:27 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 16:03:27 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 16:03:27 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 16:03:27 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 16:03:27 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 149.2137 ms
+2025-11-03 16:03:27 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 3.8337 ms
+2025-11-03 16:03:27 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 87.1051 ms
+2025-11-03 16:03:40 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 16:03:54 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 16:03:54 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)"'
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<UserCurrency>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (4ms).
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:03:55 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:03:56 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:03:56 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-03 16:03:56 [ERR] [Microsoft.EntityFrameworkCore.Query] An exception occurred while iterating over the results of a query for context type '"TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext"'."
+""Npgsql.PostgresException (0x80004005): 42P01: relation \"public.user_currencies\" does not exist
+
+POSITION: 69
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation \"public.user_currencies\" does not exist
+    Position: 69
+    File: parse_relation.c
+    Line: 1428
+    Routine: parserOpenTable"
+Npgsql.PostgresException (0x80004005): 42P01: relation "public.user_currencies" does not exist
+
+POSITION: 69
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "public.user_currencies" does not exist
+    Position: 69
+    File: parse_relation.c
+    Line: 1428
+    Routine: parserOpenTable
+2025-11-03 16:56:44 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 16:56:44 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 16:56:44 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 16:56:44 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 16:56:44 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 16:56:44 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 16:56:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 116.7494 ms
+2025-11-03 16:56:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.7464 ms
+2025-11-03 16:56:45 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 72.1863 ms
+2025-11-03 16:56:48 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 16:56:48 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<UserCurrency>()
+    .AsNoTracking()
+    .Include(x => x.Currency)
+    .Where(x => x.UserId == __userId_0)"'
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Query] Including navigation: '"UserCurrency.Currency"'.
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<UserCurrency>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: UserCurrency.UserId (long) Required PK FK AfterSave:Throw, 0], [Property: UserCurrency.CurrencyId (long) Required PK FK Index AfterSave:Throw, 1] }
+            1 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 2], [Property: Currency.Name (string) Required, 3], [Property: Currency.Rate (decimal) Required, 4] }
+        SELECT u.UserId, u.CurrencyId, c.Id, c.Name, c.Rate
+        FROM public.user_currencies AS u
+        INNER JOIN public.currencies AS c ON u.CurrencyId == c.Id
+        WHERE u.UserId == @__userId_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserCurrency>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-03 16:56:49 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:56:50 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:56:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:56:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (8ms).
+2025-11-03 16:56:51 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/user-currency" responded 200 in 3586.4041 ms
+2025-11-03 16:56:51 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 16:56:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 16:56:51 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-03 16:56:56 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-03 16:56:56 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-03 16:56:56 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-03 20:59:06 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 20:59:07 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 20:59:07 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 20:59:07 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 20:59:07 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 20:59:07 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 20:59:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 168.2981 ms
+2025-11-03 20:59:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 11.3576 ms
+2025-11-03 20:59:07 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 120.2872 ms
+2025-11-03 20:59:23 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .AsNoTracking()"'
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<Currency>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+        SELECT c.Id, c.Name, c.Rate
+        FROM public.currencies AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Currency>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (7ms).
+2025-11-03 20:59:26 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 20:59:27 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 20:59:27 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 20:59:27 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (11ms).
+2025-11-03 20:59:28 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 6320.6029 ms
+2025-11-03 20:59:28 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 20:59:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 20:59:28 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-03 21:02:53 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 21:02:53 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 21:02:54 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 21:02:54 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 21:02:54 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 21:02:54 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 21:02:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 113.9126 ms
+2025-11-03 21:02:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 4.3770 ms
+2025-11-03 21:02:54 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 104.1451 ms
+2025-11-03 21:02:57 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 21:02:57 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .AsNoTracking()
+    .Select(x => CurrencyDto.MapFrom(x))"'
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+        SELECT c.Id, c.Name, c.Rate
+        FROM public.currencies AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-03 21:02:58 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (8ms).
+2025-11-03 21:02:59 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 2423.3417 ms
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:02:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-03 21:03:15 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2025-11-03 21:03:15 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+2025-11-03 21:03:15 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+2025-11-03 21:03:23 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 21:03:23 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 21:03:23 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 21:03:23 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 21:03:23 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 21:03:23 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 21:03:24 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 142.0265 ms
+2025-11-03 21:03:24 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 3.9043 ms
+2025-11-03 21:03:24 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 124.0714 ms
+2025-11-03 21:03:27 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 21:03:30 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<Currency>()
+    .AsNoTracking()
+    .Select(x => CurrencyDto.MapFrom(x))"'
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<CurrencyDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Currency.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Currency.Name (string) Required, 1], [Property: Currency.Rate (decimal) Required, 2] }
+        SELECT c.Id, c.Name, c.Rate
+        FROM public.currencies AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CurrencyDto>, 
+    TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)"'
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-03 21:03:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:33 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (8ms).
+2025-11-03 21:03:34 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 7362.5848 ms
+2025-11-03 21:03:34 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 21:03:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:34 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (5ms).
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-03 21:03:46 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/api/Currency/currencies" responded 200 in 2534.7144 ms
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:03:46 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (1ms).
+2025-11-03 21:04:11 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+2025-11-03 21:04:11 [INF] [Microsoft.Hosting.Lifetime] Now listening on: "http://localhost:5197"
+2025-11-03 21:04:11 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-11-03 21:04:11 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+2025-11-03 21:04:11 [INF] [Microsoft.Hosting.Lifetime] Content root path: "C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Startup"
+2025-11-03 21:04:11 [DBG] [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+2025-11-03 21:04:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.html" responded 200 in 152.2205 ms
+2025-11-03 21:04:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/index.js" responded 200 in 3.7271 ms
+2025-11-03 21:04:12 [INF] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 148.7149 ms
+2025-11-03 21:04:21 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Model] The index "{'UserId'}" was not created on entity type '"UserCurrency"' as the properties are already covered by the index "{'UserId', 'CurrencyId'}".
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Query] Compiling query expression: "
+"'"DbSet<User>()
+    .FirstOrDefault(u => u.Id == __userId_0)"'
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Login (string) Required Index MaxLength(20), 1], [Property: User.Password (string) Required, 2] }
+            SELECT TOP(1) u.Id, u.Login, u.Password
+            FROM public.users AS u
+            WHERE u.Id == @__userId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        TrueCodeApp.Core.Infrastructure.Persistence.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (5ms).
+2025-11-03 21:04:29 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:31 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (9ms).
+2025-11-03 21:04:32 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites/1" responded 500 in 11391.7388 ms
+System.ApplicationException: User not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.AddCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 33
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.AddFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 21:04:32 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.ApplicationException: User not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.AddCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 33
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.AddFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 21:04:32 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 21:04:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:32 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (4ms).
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:04:59 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-03 21:05:07 [ERR] [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP "POST" "/api/Currency/favorites/1" responded 500 in 14952.8781 ms
+System.ApplicationException: User not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.AddCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 33
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.AddFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-03 21:05:07 [ERR] [Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.ApplicationException: User not found
+   at TrueCodeApp.Currency.Infrastructure.Repositories.CurrencyRepository.AddCurrencyAsync(Int64 userId, Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Infrastructure\Repositories\CurrencyRepository.cs:line 33
+   at TrueCodeApp.Currency.Web.Controllers.CurrencyController.AddFavorite(Int64 currencyId, CancellationToken ct) in C:\Users\User\Downloads\TrueCode\TrueCode\TrueCodeApp\TrueCodeApp.Currency.Web\Controllers\CurrencyController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-03 21:05:07 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] '"ApplicationDbContext"' disposed.
+2025-11-03 21:05:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:05:07 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (2ms).
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "8.0.7" initialized '"ApplicationDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"8.0.4+51faf6e9c9c7ef99c3e98d98a96adb8fa8ae4553"' with options: "None"
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"'.
+2025-11-03 21:05:17 [DBG] [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database '"true_code"' on server '"tcp://127.0.0.1:25432"' (36ms).
