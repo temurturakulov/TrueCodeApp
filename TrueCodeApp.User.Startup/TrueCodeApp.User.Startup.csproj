@@ -12,4 +12,10 @@
       <ProjectReference Include="..\TrueCodeApp.User.Web\TrueCodeApp.User.Web.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
