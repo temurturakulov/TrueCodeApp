@@ -24,14 +24,13 @@ public class Program
             
             builder.Services.AddAppDefinitions(builder.Configuration, typeof(IAppDefinition).Assembly);
             builder.Services.AddAppDefinitions(builder.Configuration, typeof(ServiceDefinition).Assembly);
-            // Добавляем фоновый сервис
+             
             builder.Services.AddHostedService<CurrencyUpdaterService>();
-            // 5. Строим приложение
+             
             var app = builder.Build();
 
-            // 6. Middleware pipeline
             app.UseSerilogLogger();
-            // 10. Запуск
+            
             app.Run();
         }
         catch (Exception e)

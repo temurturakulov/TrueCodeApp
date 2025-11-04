@@ -7,8 +7,7 @@ using TrueCodeApp.Core.Web.Definitions;
 namespace TrueCodeApp.Core.Web.Services;
 
 public class UserIdentityService(
-    IHttpContextAccessor httpContextAccessor,
-    TokenService tokenService) : IUserIdentityService
+    IHttpContextAccessor httpContextAccessor) : IUserIdentityService
 {
     public long UserId
     {
